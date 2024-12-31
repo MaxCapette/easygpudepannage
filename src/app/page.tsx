@@ -45,7 +45,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-4"> {/* Updated div */}
+          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-5"> {/* Updated div */}
             <Card className="h-full transition-all hover:scale-105 hover:shadow-lg bg-zinc-800 border-zinc-700"> {/* Updated Card */}
               <CardHeader>
                 <Cpu className="w-12 h-12 mb-4 transition-transform hover:scale-110 text-orange-500" />
@@ -122,6 +122,26 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-2 transition-colors hover:text-orange-500 text-zinc-300">
                     <Check className="w-4 h-4" /> Solutions sur mesure
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="h-full transition-all hover:scale-105 hover:shadow-lg bg-zinc-800 border-zinc-700">
+              <CardHeader>
+                <Monitor className="w-12 h-12 mb-4 transition-transform hover:scale-110 text-orange-500" />
+                <CardTitle className="text-white">Montage PC Gamer</CardTitle>
+                <CardDescription className="text-zinc-400">Assemblage sur mesure de votre configuration gaming</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="grid gap-2">
+                  <li className="flex items-center gap-2 transition-colors hover:text-orange-500 text-zinc-300">
+                    <Check className="w-4 h-4" /> Conseil personnalisé
+                  </li>
+                  <li className="flex items-center gap-2 transition-colors hover:text-orange-500 text-zinc-300">
+                    <Check className="w-4 h-4" /> Montage professionnel
+                  </li>
+                  <li className="flex items-center gap-2 transition-colors hover:text-orange-500 text-zinc-300">
+                    <Check className="w-4 h-4" /> Tests et optimisation
                   </li>
                 </ul>
               </CardContent>

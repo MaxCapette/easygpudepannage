@@ -148,7 +148,7 @@ export default function Home() {
               <Shield className="w-12 h-12 transition-transform hover:scale-110 text-orange-500" />
               <h3 className="text-xl font-bold text-white">Expertise Garantie</h3>
               <p className="text-zinc-400">
-                Plus de 10 ans d'expérience dans le dépannage informatique
+                Plus de 10 ans d&apos;expérience dans le dépannage informatique
               </p>
             </div>
             <div className="flex flex-col items-center space-y-4 text-center transition-all hover:scale-105">
@@ -185,8 +185,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2">
             <Card className="transition-all hover:scale-105 hover:shadow-lg bg-zinc-800 border-zinc-700">
               <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                 
+                <div className="flex items-start space-x-4">            
                   <div className="space-y-2">
                     <h3 className="font-bold text-white">Sophie Martin</h3>
                     <p className="text-sm text-zinc-400">

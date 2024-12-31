@@ -16,7 +16,7 @@ export default function Home() {
                   Votre expert en dépannage informatique
                 </h1>
                 <p className="max-w-[600px] text-zinc-400 md:text-xl">
-                  Solutions rapides et professionnelles pour tous vos problèmes informatiques. Intervention à domicile ou à distance.
+                  Solutions rapides et professionnelles pour tous vos problèmes informatiques. Intervention à domicile à Derval et ses alentours ou à distance.
                 </p>
               </div>
              

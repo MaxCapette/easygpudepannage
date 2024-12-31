@@ -45,7 +45,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-5"> {/* Updated div */}
+          <div className="mx-auto grid max-w-7xl items-start gap-6 py-12 lg:grid-cols-5"> {/* Updated div */}
             <Card className="h-full transition-all hover:scale-105 hover:shadow-lg bg-zinc-800 border-zinc-700"> {/* Updated Card */}
               <CardHeader>
                 <Cpu className="w-12 h-12 mb-4 transition-transform hover:scale-110 text-orange-500" />

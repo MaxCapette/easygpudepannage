@@ -1,5 +1,5 @@
-import ContactPage from "@/components/contact/contact"
-import { Button } from "@/components/ui/button"
+/* eslint-disable @next/next/no-img-element */
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check, Cpu, HardDrive, Monitor, Shield, Star, Wrench } from 'lucide-react'
 

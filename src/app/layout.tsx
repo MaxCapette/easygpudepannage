@@ -6,7 +6,7 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Easy-gpu | Dépannage Informatique",
+  title: "Easy-gpu | Dépannage Informatique Derval",
   description: "Expert en dépannage et maintenance informatique",
 }
 

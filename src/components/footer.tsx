@@ -56,7 +56,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2 transition-colors hover:text-orange-500">
                 <Mail className="w-4 h-4" />
-                <span>contact@easy-gpu.fr</span>
+                <span>contact@easygpu.fr</span>
               </div>
               <div className="flex items-center gap-2 transition-colors hover:text-orange-500">
                 <MapPin className="w-4 h-4" />

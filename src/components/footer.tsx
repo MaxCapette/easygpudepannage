@@ -6,8 +6,8 @@ export function Footer() {
   return (
     <footer id="contact" className="w-full border-t border-zinc-800 bg-zinc-900">
       <div className="container px-4 md:px-6 py-12 mx-auto" >
-        <div className="grid gap-8 lg:grid-cols-3">
-          <div className="space-y-4">
+        <div className="grid gap-8 lg:grid-cols-2 ">
+          <div className="space-y-4 ">
             <h3 className="text-xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
               Easy-gpu
             </h3>

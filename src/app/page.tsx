@@ -18,19 +18,7 @@ export default function Home() {
                 <p className="max-w-[600px] text-zinc-400 md:text-xl">
                   Solutions rapides et professionnelles pour tous vos problèmes informatiques. Intervention à domicile à Derval et ses alentours ou à distance.
                 </p>
-                <div className="mt-8 w-full h-[400px] rounded-lg overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43000.55142519268!2d-1.7143689705282616!3d47.6546127416618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480f69e0c1872fc5%3A0x40d37521e0df0d0!2s44590%20Derval!5e0!3m2!1sfr!2sfr!4v1735910228331!5m2!1sfr!2sfr"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="filter grayscale hover:grayscale-0 transition-all duration-300"
-            title="Google Maps - Localisation Easy-gpu à Derval"
-          />
-        </div>
+              
               </div>
              
             </div>
@@ -160,7 +148,22 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
+          <div className="mt-8 w-full h-[400px] rounded-lg overflow-hidden mx-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43000.55142519268!2d-1.7143689705282616!3d47.6546127416618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480f69e0c1872fc5%3A0x40d37521e0df0d0!2s44590%20Derval!5e0!3m2!1sfr!2sfr!4v1735910228331!5m2!1sfr!2sfr"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="filter grayscale hover:grayscale-0 transition-all duration-300"
+            title="Google Maps - Localisation Easy-gpu à Derval"
+          />
         </div>
+      
+        </div>
+        
       </section>
 
       {/* Why Choose Us Section */}

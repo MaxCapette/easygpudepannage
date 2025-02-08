@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check, Cpu, HardDrive, Monitor, Shield, Star, Wrench } from 'lucide-react'
 
@@ -124,6 +125,9 @@ export default function Home() {
                   <li className="flex items-center gap-2 transition-colors hover:text-orange-500 text-zinc-300">
                     <Check className="w-4 h-4" /> Solutions sur mesure
                   </li>
+                  <li className="flex items-center gap-2 transition-colors hover:text-orange-500 text-zinc-300">
+                    <Check className="w-4 h-4" /> Imprimantes
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -144,10 +148,115 @@ export default function Home() {
                   <li className="flex items-center gap-2 transition-colors hover:text-orange-500 text-zinc-300">
                     <Check className="w-4 h-4" /> Tests et optimisation
                   </li>
+                  <li className="flex items-center gap-2 transition-colors hover:text-orange-500 text-zinc-300">
+                    <Check className="w-4 h-4" /> Cours de montage de PC
+                  </li>
                 </ul>
               </CardContent>
             </Card>
+            
           </div>
+          {/* Website Creation Section */}
+      <section id="websites" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-800">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                Création de Sites Internet
+              </h2>
+              <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Des solutions web sur mesure pour votre entreprise
+              </p>
+            </div>
+          </div>
+          <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2">
+            <div className="flex flex-col items-center space-y-4 p-6 bg-zinc-900 rounded-lg border border-zinc-700 transition-all hover:scale-105 hover:shadow-lg">
+              <div className="p-3 rounded-full bg-gradient-to-br from-orange-500/20 to-amber-500/20">
+                <svg
+                  className="w-10 h-10 text-orange-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white">Site Vitrine</h3>
+              <ul className="text-center space-y-2 text-zinc-400">
+                <li>Design personnalisé</li>
+                <li>Responsive mobile</li>
+                <li>Optimisé SEO</li>
+                <li>Hébergement inclus</li>
+              </ul>
+             
+            </div>
+
+            <div className="flex flex-col items-center space-y-4 p-6 bg-zinc-900 rounded-lg border border-zinc-700 transition-all hover:scale-105 hover:shadow-lg">
+              <div className="p-3 rounded-full bg-gradient-to-br from-orange-500/20 to-amber-500/20">
+                <svg
+                  className="w-10 h-10 text-orange-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 004 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white">E-commerce</h3>
+              <ul className="text-center space-y-2 text-zinc-400">
+                <li>Catalogue produits</li>
+                <li>Paiement sécurisé</li>
+                <li>Tuto gestion des stocks</li>
+                <li>Dashboard admin</li>
+              </ul>
+              
+            </div>
+
+       
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center max-w-4xl">
+              <div className="p-4">
+                <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                  100+
+                </div>
+                <div className="text-zinc-400 mt-2">Sites livrés</div>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                  24/7
+                </div>
+                <div className="text-zinc-400 mt-2">Support technique</div>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                  99.9%
+                </div>
+                <div className="text-zinc-400 mt-2">Uptime garanti</div>
+              </div>
+              <div className="p-4">
+                <div className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                  48h
+                </div>
+                <div className="text-zinc-400 mt-2">Délai de réponse</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
           <div className="mt-8 w-full h-[400px] rounded-lg overflow-hidden mx-auto">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43000.55142519268!2d-1.7143689705282616!3d47.6546127416618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480f69e0c1872fc5%3A0x40d37521e0df0d0!2s44590%20Derval!5e0!3m2!1sfr!2sfr!4v1735910228331!5m2!1sfr!2sfr"

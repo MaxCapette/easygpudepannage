@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://easygpu.fr',
   },
+  title: 'Easy-gpu | Expert en dépannage informatique et maintenance PC à Derval',
+  description: 'Spécialiste en dépannage informatique et montage PC Gamer à Derval. Intervention à domicile, assistance à distance et maintenance préventive. Devis gratuit.',
+  keywords: 'dépannage informatique Derval, montage PC Gamer, maintenance informatique, assistance à distance, réparation ordinateur Loire-Atlantique',
 }
 
 export default function Home() {
@@ -50,10 +53,10 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 id="services-heading" className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                Nos Services
+                Nos Services de Dépannage Informatique
               </h2>
               <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Une gamme complète de services pour répondre à tous vos besoins informatiques
+                Une gamme complète de services pour répondre à tous vos besoins informatiques à Derval et ses environs
               </p>
             </div>
           </div>
@@ -167,15 +170,15 @@ export default function Home() {
             
           </div>
           {/* Website Creation Section */}
-      <section id="websites" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-800">
+      <section id="websites" aria-labelledby="websites-heading" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-800">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                Création de Sites Internet
+              <h2 id="websites-heading" className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                Création de Sites Internet Professionnels
               </h2>
               <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Des solutions web sur mesure pour votre entreprise
+                Des solutions web sur mesure pour votre entreprise à Derval et dans toute la Loire-Atlantique
               </p>
             </div>
           </div>
@@ -188,6 +191,7 @@ export default function Home() {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -215,6 +219,7 @@ export default function Home() {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -287,15 +292,15 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-800">
+      <section id="about" aria-labelledby="about-heading" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-800">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                Pourquoi Nous Choisir
+              <h2 id="about-heading" className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                Pourquoi Choisir Easy-gpu pour votre Dépannage Informatique
               </h2>
               <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Des experts passionnés à votre service
+                Des experts passionnés à votre service dans la région de Derval
               </p>
             </div>
           </div>
@@ -326,15 +331,15 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-900">
+      <section id="testimonials" aria-labelledby="testimonials-heading" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-900">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                Ce que disent nos clients
+              <h2 id="testimonials-heading" className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                Témoignages de nos clients satisfaits
               </h2>
               <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Découvrez les témoignages de nos clients satisfaits
+                Découvrez les avis de nos clients sur nos services de dépannage informatique à Derval
               </p>
             </div>
           </div>
@@ -345,7 +350,7 @@ export default function Home() {
                   <div className="space-y-2">
                     <h3 className="font-bold text-white">Sophie Martin</h3>
                     <p className="text-sm text-zinc-400">
-                      &quot;Service rapide et professionnel. Mon ordinateur fonctionne comme neuf maintenant !&quot;
+                      &quot;Service rapide et professionnel. Mon ordinateur fonctionne comme neuf maintenant ! Je recommande vivement Easy-gpu pour tous vos besoins informatiques à Derval.&quot;
                     </p>
                   </div>
                 </div>
@@ -358,7 +363,7 @@ export default function Home() {
                   <div className="space-y-2">
                     <h3 className="font-bold text-white">Thomas Dubois</h3>
                     <p className="text-sm text-zinc-400">
-                      &quot;Excellent service client et expertise technique. Je recommande vivement !&quot;
+                      &quot;Excellent service client et expertise technique. Je recommande vivement Easy-gpu pour le dépannage informatique dans la région de Derval !&quot;
                     </p>
                   </div>
                 </div>

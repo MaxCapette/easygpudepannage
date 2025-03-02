@@ -8,8 +8,8 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: 'Easy-gpu | Expert en dépannage informatique à Derval',
-  description: 'Solutions rapides et professionnelles pour tous vos problèmes informatiques. Intervention à domicile à Derval et ses alentours ou à distance.',
+  title: 'Easy-gpu | Dépannage PC & Montage PC Gamer à Derval (44590)',
+  description: 'Expert en dépannage informatique à Derval ✓ Réparation ordinateur ✓ Montage PC Gamer ✓ Maintenance préventive ✓ Intervention rapide à domicile ou à distance. Devis gratuit !',
   keywords: ['dépannage informatique', 'maintenance informatique', 'Derval', 'PC Gamer', 'réparation ordinateur', 'assistance informatique', 'dépannage PC', 'Loire-Atlantique'],
   authors: [{ name: 'Easy-gpu' }],
   creator: 'Easy-gpu',
@@ -35,8 +35,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Easy-gpu | Expert en dépannage informatique à Derval',
-    description: 'Solutions rapides et professionnelles pour tous vos problèmes informatiques. Intervention à domicile à Derval et ses alentours ou à distance.',
+    title: 'Easy-gpu | Expert en dépannage informatique à Derval (44590)',
+    description: 'Solutions rapides et professionnelles pour tous vos problèmes informatiques. Intervention à domicile à Derval et ses alentours ou à distance. Devis gratuit !',
     url: 'https://easygpu.fr',
     siteName: 'Easy-gpu',
     locale: 'fr_FR',
@@ -46,7 +46,7 @@ export const metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Easy-gpu - Dépannage Informatique',
+        alt: 'Easy-gpu - Dépannage Informatique à Derval',
       },
     ],
   },

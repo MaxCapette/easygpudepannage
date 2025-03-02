@@ -37,6 +37,7 @@ export default function Home() {
                 width={600}
                 height={400}
                 fetchPriority="high"
+                decoding="async"
               />
             </div>
           </div>
@@ -277,6 +278,7 @@ export default function Home() {
             referrerPolicy="no-referrer-when-downgrade"
             className="filter grayscale hover:grayscale-0 transition-all duration-300"
             title="Google Maps - Localisation Easy-gpu à Derval"
+            aria-label="Carte Google Maps montrant l'emplacement d'Easy-gpu à Derval"
           />
         </div>
       

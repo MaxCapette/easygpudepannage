@@ -39,7 +39,7 @@ export const LocalBusinessJsonLd = {
     'https://www.tiktok.com/@easygpu.fr'
   ],
   priceRange: '$$',
-  image: 'https://easygpu.fr/og-image.jpg',
+  image: 'https://easygpu.fr/og-image.png',
   keywords: 'dépannage informatique, maintenance informatique, Derval, PC Gamer, réparation ordinateur'
 };
 
@@ -101,4 +101,60 @@ export const FAQJsonLd = {
       }
     }
   ]
+};
+
+export const BreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Accueil',
+      'item': 'https://easygpu.fr'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Nos Services',
+      'item': 'https://easygpu.fr/#services'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'Création de Sites Internet',
+      'item': 'https://easygpu.fr/#websites'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 4,
+      'name': 'À Propos',
+      'item': 'https://easygpu.fr/#about'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 5,
+      'name': 'Témoignages',
+      'item': 'https://easygpu.fr/#testimonials'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 6,
+      'name': 'Contact',
+      'item': 'https://easygpu.fr/#contact'
+    }
+  ]
+};
+
+export const WebsiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  'url': 'https://easygpu.fr',
+  'name': 'Easy-gpu | Expert en dépannage informatique à Derval',
+  'description': 'Solutions rapides et professionnelles pour tous vos problèmes informatiques. Intervention à domicile à Derval et ses alentours ou à distance.',
+  'potentialAction': {
+    '@type': 'SearchAction',
+    'target': 'https://easygpu.fr/search?q={search_term_string}',
+    'query-input': 'required name=search_term_string'
+  }
 }; 

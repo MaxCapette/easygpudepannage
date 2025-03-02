@@ -2,37 +2,52 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://easygpu.fr'
+  const lastModified = new Date()
   
-  return [
+  // Pages principales
+  const mainPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 1.0,
+    }
+  ]
+  
+  // Sections de la page d'accueil (traités comme des "pages" virtuelles pour le SEO)
+  const sections = [
+    {
+      path: '#services',
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/#services`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      path: '#websites',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/#tarifs`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#avis`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      path: '#about',
+      changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/#contact`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.6,
+      path: '#testimonials',
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
     },
-  ]
+    {
+      path: '#contact',
+      changeFrequency: 'yearly' as const,
+      priority: 0.7,
+    },
+  ].map(section => ({
+    url: `${baseUrl}${section.path}`,
+    lastModified,
+    changeFrequency: section.changeFrequency,
+    priority: section.priority,
+  }))
+  
+  // Construire le sitemap complet
+  return [...mainPages, ...sections]
 } 

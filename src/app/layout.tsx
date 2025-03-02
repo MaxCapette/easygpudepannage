@@ -2,7 +2,7 @@ import "./globals.css"
 import { Inter } from 'next/font/google'
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { LocalBusinessJsonLd, ServiceJsonLd, FAQJsonLd } from './structured-data'
+import { LocalBusinessJsonLd, ServiceJsonLd, FAQJsonLd, BreadcrumbJsonLd, WebsiteJsonLd } from './structured-data'
 import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] })
@@ -43,7 +43,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Easy-gpu - Dépannage Informatique',
@@ -54,7 +54,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Easy-gpu | Expert en dépannage informatique à Derval',
     description: 'Solutions rapides et professionnelles pour tous vos problèmes informatiques. Intervention à domicile à Derval et ses alentours.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
 }
 
@@ -68,6 +68,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-icon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preload" href="/tech.png" as="image" />
+        <link rel="preload" href="/logo.png" as="image" />
         <Script
           id="local-business-jsonld"
           type="application/ld+json"
@@ -82,6 +86,16 @@ export default function RootLayout({
           id="faq-jsonld"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQJsonLd) }}
+        />
+        <Script
+          id="breadcrumb-jsonld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(BreadcrumbJsonLd) }}
+        />
+        <Script
+          id="website-jsonld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(WebsiteJsonLd) }}
         />
       </head>
       <body className={`${inter.className} bg-zinc-900`}>

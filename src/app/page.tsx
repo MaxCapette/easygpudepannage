@@ -1,19 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check, Cpu, HardDrive, Monitor, Shield, Star, Wrench } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://easygpu.fr',
+  },
+}
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-zinc-900 to-zinc-800 mx-auto">
+      <section aria-labelledby="hero-heading" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-zinc-900 to-zinc-800 mx-auto">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                <h1 id="hero-heading" className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
                   Votre expert en dépannage informatique
                 </h1>
                 <p className="max-w-[600px] text-zinc-400 md:text-xl">
@@ -25,9 +31,12 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <img
-                alt="Hero"
+                alt="Dépannage informatique à Derval"
                 className="aspect-video overflow-hidden rounded-xl object-cover transition-transform hover:scale-105"
                 src="/tech.png?height=400&width=600"
+                width={600}
+                height={400}
+                fetchPriority="high"
               />
             </div>
           </div>
@@ -35,11 +44,11 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-900">
+      <section id="services" aria-labelledby="services-heading" className="w-full py-12 md:py-24 lg:py-32 bg-zinc-900">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+              <h2 id="services-heading" className="text-3xl font-bold tracking-tighter md:text-4xl bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
                 Nos Services
               </h2>
               <p className="max-w-[900px] text-zinc-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
